@@ -1,0 +1,38 @@
+{
+  "name": "react-webpack-typescript-babel-template",
+  "version": "0.1.0",
+  "description": "A starter template for projects using React, Webpack and Babel to build TypeScript code, and using TypeScript for type-checking.",
+  "repository": {
+    "type": "git",
+    "directory": "https://github.com/nicksp/react-webpack-typescript-babel-template.git"
+  },
+  "author": "Nick S. Plekhanov <nick.plekhanov@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "typecheck:watch": "npm run typecheck -- --watch",
+    "build": "webpack --progress --colors --mode=production",
+    "start": "webpack-dev-server --config webpack.config.js --progress --colors --open --mode=development"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "@babel/preset-typescript": "^7.7.2",
+    "babel-loader": "^8.0.6",
+    "fork-ts-checker-webpack-plugin": "^3.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "typescript": "^3.7.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.4",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  }
+}
